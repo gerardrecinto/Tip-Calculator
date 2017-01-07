@@ -6,7 +6,7 @@ rk - *Tip Calculator*
 
 Submitted by: **Gerard Recinto**
 
-Time spent: **6** hours spent in total
+Time spent: **8** hours spent in total
 
 ## User Stories
 
@@ -19,18 +19,19 @@ The following **optional** features are implemented:
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [ x] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [ x] List anything else that you can get done to improve the app functionality!
+- [ x] Added color to the background
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 <blockquote class="imgur-embed-pub" lang="en" data-id="1QRRxly"><a href="//imgur.com/1QRRxly">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
-<img src=http://i.imgur.com/1QRRxly.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src=http://imgur.com/a/FGENO.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
