@@ -20,11 +20,41 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
 
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("view will appear")
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let tippers = defaults.doubleForKey("percent")
+        tipControl.selectedSegmentIndex = defaults.integerForKey("index")
+        let bill = Double(billField.text!) ?? 0
+        let tip = (bill * tippers)
+        let total = bill + tip
+        tipLabel.text = String(format: "$%.2f", tip)
+        totalLabel.text = String(format: "$%.2f", total)
+        // This is a good place to retrieve the default tip percentage from UserDefaults
+        // and use it to update the tip amount
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did appear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print("view will disappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("view did disappear")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
         super.view.backgroundColor = UIColor.cyanColor()
+        let defaults = NSUserDefaults.standardUserDefaults()
+        self.tipControl.selectedSegmentIndex = defaults.integerForKey("index")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,6 +70,10 @@ class ViewController: UIViewController {
  
    
     @IBAction func calculateTip(sender: AnyObject) {
+       /* let eighteen = defaults.doubleForKey("eighteen")
+        let twenty = defaults.doubleForKey("twenty")
+        let twentyFive = defaults.doubleForKey("twenty-five")
+        let tipPercentages = [eighteen, twenty, twentyFive]*/
         let tipPercentages = [0.18, 0.20, 0.25]
         let bill = Double(billField.text!) ?? 0
         let tip = (bill * tipPercentages[tipControl.selectedSegmentIndex])
@@ -47,7 +81,15 @@ class ViewController: UIViewController {
 
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        /*let tippers = defaults.doubleForKey("percent")
+        tip = (bill * tippers)
+        total = bill + tip*/
+     
+        }
+        
+        
+        
     }
 
-}
+
 

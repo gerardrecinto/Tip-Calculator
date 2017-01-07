@@ -2,17 +2,21 @@
 //  SettingsViewController.swift
 //  tip_calc
 //
-//  Created by Gerard Recinto on 12/28/16.
-//  Copyright © 2016 Gerard Recinto. All rights reserved.
+//  Created by Gerard Recinto on 1/7/17.
+//  Copyright © 2017 Gerard Recinto. All rights reserved.
 //
 
 import UIKit
 
+
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var tippyCtrl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Tip Calculator"
+        super.view.backgroundColor = UIColor.lightGrayColor()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +25,17 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func save(sender: AnyObject) {
+        
+        //Access UserDefaults
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let tipPercentages = [0.18, 0.20, 0.25]
+        defaults.setInteger(tippyCtrl.selectedSegmentIndex, forKey: "index")
+        defaults.setDouble( tipPercentages[tippyCtrl.selectedSegmentIndex], forKey: "percent")
+        // Force UserDefaults to save.
+        defaults.synchronize()
+    }
+  
 
     /*
     // MARK: - Navigation
