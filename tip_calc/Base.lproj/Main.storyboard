@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="xxh-Lr-SMg">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -8,7 +8,7 @@
         <!--Tip Calculator-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tip_calc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tip Calculator" id="BYZ-38-t0r" customClass="ViewController" customModule="tip_calc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,12 +89,17 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="lOW-Vr-rej">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="i9B-wS-8ME"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="i9B-wS-8ME">
+                            <connections>
+                                <segue destination="5Wy-hX-f5A" kind="push" id="tmD-8p-xsB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="billField" destination="mKO-kr-Jo5" id="PRQ-m9-gJa"/>
                         <outlet property="tipControl" destination="2Sn-rX-KSW" id="gzd-Wl-orD"/>
                         <outlet property="tipLabel" destination="ZVb-OW-OBv" id="vXm-sn-H3H"/>
+                        <outlet property="tipView" destination="8bC-Xf-vdC" id="bUu-SD-F1F"/>
                         <outlet property="totalLabel" destination="89A-YT-YmE" id="OQG-fc-NaT"/>
                     </connections>
                 </viewController>
@@ -105,25 +110,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1266" y="294"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="cH2-R2-Lya">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iw8-m3-J5c" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w2f-SX-1K8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="QYq-PB-g5B" kind="relationship" relationship="rootViewController" id="pGf-4Y-IAE"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vVn-aw-kXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="202" y="294"/>
+            <point key="canvasLocation" x="1787" y="294"/>
         </scene>
         <!--SettingsViewController-->
         <scene sceneID="RMv-LE-W8C">
@@ -137,11 +124,18 @@
                             <tableViewSection headerTitle="Saving" id="SJ9-xW-4Oo">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="tIo-nR-ecB">
-                                        <rect key="frame" x="0.0" y="49.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tIo-nR-ecB" id="GwR-eM-acD">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Xbo-vQ-h7a">
+                                                    <rect key="frame" x="21" y="7" width="34" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Save"/>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -149,11 +143,18 @@
                             <tableViewSection headerTitle="Loading" id="iav-7Q-hdA">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cE0-2W-rKU">
-                                        <rect key="frame" x="0.0" y="143.5" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="207.5" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cE0-2W-rKU" id="vNl-5Z-oqq">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fCc-uT-lOQ">
+                                                    <rect key="frame" x="23" y="7" width="34" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Load"/>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -164,29 +165,30 @@
                             <outlet property="delegate" destination="5Wy-hX-f5A" id="vUi-k1-8CC"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="vQb-av-3Ol"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cb3-1X-2QM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1012" y="-192"/>
+            <point key="canvasLocation" x="1458" y="-134"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="A1a-fe-8CP">
+        <scene sceneID="ZXD-XM-g2G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QYq-PB-g5B" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xxh-Lr-SMg" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="3G1-Mp-cfq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uwA-Ve-pAY">
+                    <navigationItem key="navigationItem" id="noY-eS-ZEL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sjI-bT-pye">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="EKX-f9-iIy"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="P32-Td-Nip"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ed4-KS-07h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nge-8u-yi5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="733" y="294"/>
+            <point key="canvasLocation" x="1255" y="294"/>
         </scene>
     </scenes>
 </document>

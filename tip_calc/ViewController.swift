@@ -8,15 +8,23 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    @IBOutlet var tipView: UIView!
+    
     @IBOutlet weak var billField: UITextField!
   
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipLabel: UILabel!
+
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        super.view.backgroundColor = UIColor.cyanColor()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -28,6 +36,8 @@ class ViewController: UIViewController {
     @IBAction func onTap(sender: AnyObject) {
         view.endEditing(true)
     }
+    
+ 
    
     @IBAction func calculateTip(sender: AnyObject) {
         let tipPercentages = [0.18, 0.20, 0.25]
