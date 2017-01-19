@@ -21,6 +21,7 @@ class ViewController: UIViewController {
 
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
         print("view will appear")
         let defaults = NSUserDefaults.standardUserDefaults()
@@ -49,10 +50,12 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         print("view did disappear")
     }
+    @IBOutlet weak var segView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
         super.view.backgroundColor = UIColor.cyanColor()
+        segView.backgroundColor = UIColor.cyanColor()
         let defaults = NSUserDefaults.standardUserDefaults()
         self.tipControl.selectedSegmentIndex = defaults.integerForKey("index")
         // Do any additional setup after loading the view, typically from a nib.

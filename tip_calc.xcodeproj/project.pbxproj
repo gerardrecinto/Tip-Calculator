@@ -15,6 +15,7 @@
 		EF0F04C21E146D5D002B9962 /* tip_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04C11E146D5D002B9962 /* tip_calcTests.swift */; };
 		EF0F04CD1E146D5D002B9962 /* tip_calcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04CC1E146D5D002B9962 /* tip_calcUITests.swift */; };
 		EF771F431E20EC0100FF876F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF771F421E20EC0100FF876F /* SettingsViewController.swift */; };
+		EF9AA8621E30C1F4000D62A4 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AA8611E30C1F4000D62A4 /* Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EF0F04CC1E146D5D002B9962 /* tip_calcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calcUITests.swift; sourceTree = "<group>"; };
 		EF0F04CE1E146D5D002B9962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF771F421E20EC0100FF876F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EF9AA8611E30C1F4000D62A4 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		EF0F04A01E146D5D002B9962 = {
 			isa = PBXGroup;
 			children = (
+				EF9AA8611E30C1F4000D62A4 /* Style.swift */,
 				EF0F04AB1E146D5D002B9962 /* tip_calc */,
 				EF0F04C01E146D5D002B9962 /* tip_calcTests */,
 				EF0F04CB1E146D5D002B9962 /* tip_calcUITests */,
@@ -262,6 +265,7 @@
 				EF0F04AF1E146D5D002B9962 /* ViewController.swift in Sources */,
 				EF0F04AD1E146D5D002B9962 /* AppDelegate.swift in Sources */,
 				EF771F431E20EC0100FF876F /* SettingsViewController.swift in Sources */,
+				EF9AA8621E30C1F4000D62A4 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
