@@ -20,11 +20,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
 
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear( animated: Bool) {
         
         super.viewWillAppear(animated)
         print("view will appear")
-        let defaults = NSUserDefaults.standardUserDefaults()
+        try defaults = NSUserDefaults.standardUserDefaults()
+        //catch NSException {print("caught")}
         let tippers = defaults.doubleForKey("percent")
         tipControl.selectedSegmentIndex = defaults.integerForKey("index")
         let bill = Double(billField.text!) ?? 0
@@ -36,17 +37,17 @@ class ViewController: UIViewController {
         // and use it to update the tip amount
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         print("view did appear")
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         print("view will disappear")
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewDidDisappear(animated: Bool) {
         super.viewDidAppear(animated)
         print("view did disappear")
     }
