@@ -15,7 +15,7 @@ class SettingsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        super.view.backgroundColor = UIColor.lightGrayColor()
+        super.view.backgroundColor = UIColor.lightGray
         
         // Do any additional setup after loading the view.
     }
@@ -25,13 +25,13 @@ class SettingsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func save(sender: AnyObject) {
+    @IBAction func save(_ sender: AnyObject) {
         
         //Access UserDefaults
-        let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = UserDefaults.standard
         let tipPercentages = [0.18, 0.20, 0.25]
-        defaults.setInteger(tippyCtrl.selectedSegmentIndex, forKey: "index")
-        defaults.setDouble( tipPercentages[tippyCtrl.selectedSegmentIndex], forKey: "percent")
+        defaults.set(tippyCtrl.selectedSegmentIndex, forKey: "index")
+        defaults.set( tipPercentages[tippyCtrl.selectedSegmentIndex], forKey: "percent")
         // Force UserDefaults to save.
         defaults.synchronize()
     }

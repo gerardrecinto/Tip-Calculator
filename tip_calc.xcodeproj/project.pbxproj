@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF0F04AD1E146D5D002B9962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04AC1E146D5D002B9962 /* AppDelegate.swift */; };
-		EF0F04AF1E146D5D002B9962 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04AE1E146D5D002B9962 /* ViewController.swift */; };
+		EF0F04AF1E146D5D002B9962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04AE1E146D5D002B9962 /* AppDelegate.swift */; };
 		EF0F04B21E146D5D002B9962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0F04B01E146D5D002B9962 /* Main.storyboard */; };
 		EF0F04B41E146D5D002B9962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF0F04B31E146D5D002B9962 /* Assets.xcassets */; };
 		EF0F04B71E146D5D002B9962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF0F04B51E146D5D002B9962 /* LaunchScreen.storyboard */; };
 		EF0F04C21E146D5D002B9962 /* tip_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04C11E146D5D002B9962 /* tip_calcTests.swift */; };
 		EF0F04CD1E146D5D002B9962 /* tip_calcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0F04CC1E146D5D002B9962 /* tip_calcUITests.swift */; };
+		EF22608C1FB19530005A9B25 /* iphone_portrait_6_@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF22608B1FB19530005A9B25 /* iphone_portrait_6_@2x.png */; };
+		EF22608E1FB197D4005A9B25 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = EF22608D1FB197D4005A9B25 /* Assets */; };
+		EF2260901FB197F2005A9B25 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF22608F1FB197F2005A9B25 /* Icon-60@3x.png */; };
 		EF771F431E20EC0100FF876F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF771F421E20EC0100FF876F /* SettingsViewController.swift */; };
 		EF9AA8621E30C1F4000D62A4 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9AA8611E30C1F4000D62A4 /* Style.swift */; };
+		EFFF41BB1E30E83F003E42A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFF41BA1E30E83F003E42A4 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,7 @@
 
 /* Begin PBXFileReference section */
 		EF0F04A91E146D5D002B9962 /* tip_calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tip_calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF0F04AC1E146D5D002B9962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF0F04AE1E146D5D002B9962 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF0F04AE1E146D5D002B9962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF0F04B11E146D5D002B9962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF0F04B31E146D5D002B9962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF0F04B61E146D5D002B9962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,8 +51,12 @@
 		EF0F04C81E146D5D002B9962 /* tip_calcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tip_calcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0F04CC1E146D5D002B9962 /* tip_calcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tip_calcUITests.swift; sourceTree = "<group>"; };
 		EF0F04CE1E146D5D002B9962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF22608B1FB19530005A9B25 /* iphone_portrait_6_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone_portrait_6_@2x.png"; path = "../../../Downloads/untitled folder/iphone_portrait_6_@2x.png"; sourceTree = "<group>"; };
+		EF22608D1FB197D4005A9B25 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../../../Downloads/untitled folder/Assets"; sourceTree = "<group>"; };
+		EF22608F1FB197F2005A9B25 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@3x.png"; path = "../../../Downloads/untitled folder/Assets/App Icon/Icon-60@3x.png"; sourceTree = "<group>"; };
 		EF771F421E20EC0100FF876F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		EF9AA8611E30C1F4000D62A4 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		EFFF41BA1E30E83F003E42A4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +108,15 @@
 		EF0F04AB1E146D5D002B9962 /* tip_calc */ = {
 			isa = PBXGroup;
 			children = (
-				EF0F04AC1E146D5D002B9962 /* AppDelegate.swift */,
-				EF0F04AE1E146D5D002B9962 /* ViewController.swift */,
+				EFFF41BA1E30E83F003E42A4 /* ViewController.swift */,
+				EF0F04AE1E146D5D002B9962 /* AppDelegate.swift */,
 				EF771F421E20EC0100FF876F /* SettingsViewController.swift */,
 				EF0F04B01E146D5D002B9962 /* Main.storyboard */,
 				EF0F04B31E146D5D002B9962 /* Assets.xcassets */,
+				EF22608F1FB197F2005A9B25 /* Icon-60@3x.png */,
+				EF22608D1FB197D4005A9B25 /* Assets */,
 				EF0F04B51E146D5D002B9962 /* LaunchScreen.storyboard */,
+				EF22608B1FB19530005A9B25 /* iphone_portrait_6_@2x.png */,
 				EF0F04B81E146D5D002B9962 /* Info.plist */,
 			);
 			path = tip_calc;
@@ -199,13 +208,17 @@
 				TargetAttributes = {
 					EF0F04A81E146D5D002B9962 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = R7C6985UMF;
+						LastSwiftMigration = 0830;
 					};
 					EF0F04BC1E146D5D002B9962 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = EF0F04A81E146D5D002B9962;
 					};
 					EF0F04C71E146D5D002B9962 = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0830;
 						TestTargetID = EF0F04A81E146D5D002B9962;
 					};
 				};
@@ -235,7 +248,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2260901FB197F2005A9B25 /* Icon-60@3x.png in Resources */,
+				EF22608E1FB197D4005A9B25 /* Assets in Resources */,
 				EF0F04B71E146D5D002B9962 /* LaunchScreen.storyboard in Resources */,
+				EF22608C1FB19530005A9B25 /* iphone_portrait_6_@2x.png in Resources */,
 				EF0F04B41E146D5D002B9962 /* Assets.xcassets in Resources */,
 				EF0F04B21E146D5D002B9962 /* Main.storyboard in Resources */,
 			);
@@ -262,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0F04AF1E146D5D002B9962 /* ViewController.swift in Sources */,
-				EF0F04AD1E146D5D002B9962 /* AppDelegate.swift in Sources */,
+				EF0F04AF1E146D5D002B9962 /* AppDelegate.swift in Sources */,
 				EF771F431E20EC0100FF876F /* SettingsViewController.swift in Sources */,
+				EFFF41BB1E30E83F003E42A4 /* ViewController.swift in Sources */,
 				EF9AA8621E30C1F4000D62A4 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,10 +421,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tip_calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calc";
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-com-codepath-tip-calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,10 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tip_calc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calc";
+				PRODUCT_BUNDLE_IDENTIFIER = "XC-com-codepath-tip-calc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calcTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tip_calc.app/tip_calc";
 			};
 			name = Debug;
@@ -443,6 +468,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calcTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tip_calc.app/tip_calc";
 			};
 			name = Release;
@@ -454,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calcUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = tip_calc;
 				USES_XCTRUNNER = YES;
 			};
@@ -466,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tip-calcUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = tip_calc;
 				USES_XCTRUNNER = YES;
 			};
